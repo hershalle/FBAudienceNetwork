@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 /*
  * Copyright (c) Meta Platforms, Inc. and affiliates.
@@ -18,7 +18,7 @@ let sdkChecksum = "bc372b223bec0d922f51c97acc355653f89e8e5e857edf8a85a582364feb0
 
 let package = Package(
   name: sdkName,
-  platforms: [.iOS(.v13)],
+  platforms: [.iOS(.v15)],
   products: [
     .ansdk
   ],
@@ -39,7 +39,7 @@ extension Target {
   static let wrapper = target(
     name: "\(sdkName)Wrapper",
     dependencies: [
-      "\(sdkName)Binary",
+      .target(name: "\(sdkName)Binary"),
       .product(name: "QuickLayout", package: "QuickLayout"),
       .product(name: "FastResultBuilder", package: "QuickLayout"),
     ],
