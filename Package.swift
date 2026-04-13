@@ -14,7 +14,7 @@ import PackageDescription
 let sdkName = "FBAudienceNetwork"
 let sdkVersion = "6.21.1"
 let sdkCdnBaseUrl = "https://github.com/hershalle/FBAudienceNetwork/releases/download"
-let sdkChecksum = "bc372b223bec0d922f51c97acc355653f89e8e5e857edf8a85a582364feb0005"
+let sdkChecksum = "59f228521a1700a41cfd63f8d4da214b20e957aebf2f3947cfe0f1a60ec12e07"
 
 let package = Package(
   name: sdkName,
