@@ -1,1 +1,1 @@
-@_exported import FBAudienceNetworkBinary
+@_exported import FBAudienceNetwork
